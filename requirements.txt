@@ -1,0 +1,17 @@
+openai
+python-dotenv>=1.0.0
+pandas
+pyarrow
+matplotlib>=3.5.0
+seaborn>=0.11.0
+numpy>=1.21.0
+spacy>=3.0.0
+anthropic
+nltk>=3.8.0
+rouge-score>=0.1.2
+tqdm
+torch
+transformers
+scikit-learn
+accelerate
+tiktoken

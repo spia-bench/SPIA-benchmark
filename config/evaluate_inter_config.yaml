@@ -1,0 +1,37 @@
+# ============================================================================
+# Inter-Annotator Agreement Evaluation Configuration
+# ============================================================================
+#
+# Evaluates agreement between two human annotators and updates ground truth.
+# For detailed documentation, see: src/evaluate/PIPELINE_GUIDE.md
+#
+# Quick Reference:
+#   Output: data/spia/inter_annotator/{data}_inter_evaluation.json
+#   Scripts: align_cross_annotations → align_subject_across_annotators → check_human_labels_inter
+# ============================================================================
+
+input:
+  # Directory containing annotator files (e.g., annotator1.jsonl, annotator2.jsonl)
+  # Example structure: data/spia/annotators/tab/annotator1.jsonl
+  annotators_dir: "data/spia/annotators/tab" 
+
+align_cross_annotations:
+  # No additional parameters needed
+
+align_subject_across_annotators:
+  api_provider: "openai"
+  model: "gpt-4.1-mini"
+  processing_mode: "concurrent"
+  num_workers: 20
+  document_limit: null
+
+check_human_labels_inter:
+  api_provider: "openai"
+  model: "gpt-4.1-mini"
+  min_certainty: 3
+  tags_to_evaluate: null
+  location_max_depth: 4
+  decider: "rule_model_human"
+  num_workers: 20
+  show_case_logs: true
+  case_log_filter: "disagree"  # Options: all, disagree (score < 1.0), mismatch (score = 0.0)
