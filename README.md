@@ -22,6 +22,12 @@ This repository contains the code and data for the paper:
 - **Novel Metrics**: CPR (Collective Protection Rate) and IPR (Individual Protection Rate)
 - **Multi-domain Benchmark**: 675 documents across legal (TAB) and online content (PANORAMA) domains
 
+## Dataset
+
+The SPIA benchmark dataset is also available on Hugging Face:
+
+🤗 **[spia-bench/SPIA-benchmark](https://huggingface.co/datasets/spia-bench/SPIA-benchmark)**
+
 ## Benchmark Statistics
 
 | Dataset | Documents | Subjects | PIIs | Avg Subjects/Doc |
