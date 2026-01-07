@@ -41,3 +41,32 @@ PANORAMA Dataset (data/entity/panorama_*.jsonl, data/spia/panorama_*.jsonl):
   Under the following terms:
   - Attribution: You must give appropriate credit, provide a link to the license,
     and indicate if changes were made.
+
+---
+
+CITATION
+
+If you use this dataset, please cite:
+
+% TAB benchmark
+@article{pilan2022tab,
+    author = {Pil{\'a}n, Ildik{\'o} and Lison, Pierre and {\O}vrelid, Lilja and Papadopoulou, Anthi and S{\'a}nchez, David and Batet, Montserrat},
+    title = {The Text Anonymization Benchmark ({TAB}): A Dedicated Corpus and Evaluation Framework for Text Anonymization},
+    journal = {Computational Linguistics},
+    volume = {48},
+    number = {4},
+    pages = {1053--1101},
+    year = {2022},
+    doi = {10.1162/coli_a_00458},
+    url = {https://aclanthology.org/2022.cl-4.19/}
+}
+
+% PANORAMA dataset
+@article{selvam2025panorama,
+    author = {Selvam, Sriram and Ghosh, Anneswa},
+    title = {{PANORAMA}: A Synthetic {PII}-laced Dataset for Studying Sensitive Data Memorization in {LLM}s},
+    journal = {Computing Research Repository},
+    volume = {arXiv:2505.12238},
+    year = {2025},
+    url = {http://arxiv.org/abs/2505.12238}
+}
